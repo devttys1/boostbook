@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Boostbook: user guide and support</title>
+<meta name="description" content="Boostbook shows live boost, temperatures and xDrive torque from your BMW diesel, keeps its service history and writes it to the head unit over ENET.">
+<link rel="icon" href="img/icon.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header>
+  <img src="img/icon.png" alt="">
+  <div>
+    <h1>Boostbook</h1>
+    <p class="tagline">Live gauges and the service book for your BMW diesel, on your iPhone.</p>
+  </div>
+</header>
+
+<nav>
+  <a href="#start">Getting started</a>
+  <a href="#guide">User guide</a>
+  <a href="#gauges">Gauges</a>
+  <a href="#data">Your data</a>
+  <a href="#trouble">Troubleshooting</a>
+  <a href="#support">Support</a>
+  <a href="privacy.html">Privacy</a>
+</nav>
+
+<div class="shots">
+  <img src="img/gauges.png" alt="Live gauges: boost, RPM, torque and temperatures">
+  <img src="img/history.png" alt="A car's service history">
+  <img src="img/write.png" alt="Writing to the car after the VIN check">
+  <img src="img/car.png" alt="The car and the garage">
+  <img src="img/backups.png" alt="Backups, newest first">
+  <img src="img/cbs.png" alt="Service due items">
+  <img src="img/editor.png" alt="Editing a record">
+</div>
+
+<p>Boostbook turns your iPhone into a gauge pod for your BMW diesel with xDrive: boost against its target, oil, coolant and exhaust temperatures, and how much torque the rear axle is taking, live from the car's control units. It also keeps each car's service history and writes it to the head unit, so every service shows up on the car's own Service History screen, and it reads and resets the service-due (CBS) items the instrument cluster shows.</p>
+
+<h2 id="start">Getting started</h2>
+<div class="card">
+<h3>What you need</h3>
+<p>A BMW F, G or I-series car, and one of:</p>
+<ul>
+  <li>an <strong>ENET cable</strong> (Ethernet to OBD) and a <strong>USB-C or Lightning Ethernet adapter</strong> for the iPhone. This is the fastest way. When it's plugged in, it shows under Settings &gt; Ethernet.</li>
+  <li>a <strong>Wi-Fi ENET adapter</strong>.</li>
+</ul>
+<p>The gauges are made for BMW's B47 four-cylinder diesel with xDrive; other engines show the gauges they answer. Writing service history needs an NBT Evo head unit. Boostbook was developed and tested on an F48 X1 xDrive with the B47 and NBT Evo; other cars may work but haven't been tested.</p>
+<h3>Connecting</h3>
+<p>On the <strong>Car</strong> tab, choose how you connect under <strong>Connect with</strong>, plug in and switch the ignition on, then:</p>
+<ul>
+  <li><strong>ENET cable:</strong> tap <strong>Find vehicle</strong>. Wi-Fi can stay on: with <strong>ENET over</strong> set to the cable, the car's traffic stays on it.</li>
+  <li><strong>Wi-Fi ENET adapter:</strong> join its Wi-Fi network, type its IP address and tap <strong>Connect</strong>.</li>
+</ul>
+<p>Allow <strong>Local Network</strong> access when iOS asks. Boostbook connects and reads the VIN. A car it hasn't seen before is added to your garage with its own service history; a car it knows is selected.</p>
+<h3>Trying it without a car</h3>
+<p>On the Car tab, set <strong>Connect with</strong> to <strong>Simulator</strong> and tap <strong>Find vehicle</strong>. A pretend gateway, head unit, instrument cluster and engine (one that idles, pulls hard and coasts) run inside the app, so you can try every screen first.</p>
+<h3>Car connection</h3>
+<p>Connecting to a real car, for the gauges, writing and CBS, is a one-time in-app purchase. The simulator, editing histories, import and export, and backups are free. On a new iPhone, or after reinstalling, tap <strong>Unlock car connection</strong> on the Car tab, then <strong>Restore purchase</strong>.</p>
+</div>
+
+<h2 id="guide">User guide</h2>
+<div class="card">
+<h3>Car</h3>
+<p>The selected car, with its name and VIN, plus the connection settings and your garage. Tap a car in the garage to switch to it. Swipe a car to rename or delete it. <strong>Add car by VIN</strong> lets you prepare a car's history before you connect to it, and <strong>Import a car from a file</strong> adds a car from an exported .json or .tst file, and <strong>Import a car from a QR code</strong> from the BMW Service Manager web app. The <kbd>?</kbd> button opens this guide in the app.</p>
+<h3>Car details</h3>
+<p>Tap a car's ⓘ to see:</p>
+<ul>
+  <li><strong>From the car:</strong> the model, build date, transmission, type key, paint and upholstery codes and option codes, read from the vehicle order that F, G and I-series cars keep. It's read every time you connect.</li>
+  <li><strong>Notes:</strong> anything you want to remember about the car.</li>
+  <li><strong>From the VIN:</strong> the manufacturer, the country it was made in, the type key, the model year (only where the VIN encodes one, as in North America and China) and the short VIN.</li>
+  <li><strong>Online:</strong> <strong>Look up online</strong> asks the US NHTSA's free VIN decoder. It's most complete for cars sold in North America.</li>
+</ul>
+<h3>History</h3>
+<p>The selected car's service records. Tap <strong>Add record</strong>, or tap a record to edit it:</p>
+<ul>
+  <li>The date, mileage, dealer type and dealer number (up to 7 characters), and the record's status.</li>
+  <li>Up to 13 service items, such as engine oil, front and rear brakes, brake fluid, filters, spark plugs and the vehicle check. Each item has a status (carried out, carried out late, overdue) and the distance and time left until it's next due.</li>
+</ul>
+<p>Hold a record and drag it to move it. Swipe a record left to remove it or move it down, and right to move it up. The <kbd>⋯</kbd> menu has Sort by mileage (highest first), Import, Export and Backups.</p>
+<h3>Write to car</h3>
+<p><strong>Write to car</strong>, at the bottom of the History tab, opens the write sheet: the car, its VIN, how many records and the latest one. Choose <strong>Replace</strong> (erase the head unit's history first) or <strong>Add</strong> (after what it has), and whether to restart the head unit afterwards. The button (<strong>Replace with 5 records</strong>, <strong>Add 5 records</strong>) asks for confirmation, then:</p>
+<ol>
+  <li>reads the VIN from the head unit and stops if it isn't the selected car,</li>
+  <li>erases the head unit's existing history, if you chose Replace,</li>
+  <li>adds each record, and</li>
+  <li>restarts the head unit, if you chose to, so the new history shows.</li>
+</ol>
+<p>Each step shows a ✓ or ✗. The head unit's existing history <strong>can't be read back</strong>, so erasing it is permanent.</p>
+<h3>CBS (service due)</h3>
+<p><strong>Read CBS</strong> lists the Condition Based Service items the instrument cluster shows. For each one you see how much life is left, the distance left or overdue, the due date, the interval and how many times it has been serviced. <strong>Reset</strong> sets an item back to 100% and adds one to its service count, in the control unit that owns it. Only reset an item once the service has been done.</p>
+<h3>Advanced tools</h3>
+<p>Turn on <strong>Advanced tools</strong> at the bottom of the in-app guide (<kbd>?</kbd>) for <strong>Preview requests</strong> in the write sheet, which shows exactly what will be sent, and the <strong>Probe</strong> tab: read-only routine results, a data-identifier scan of any control unit, and a log of every frame sent and received.</p>
+</div>
+
+<h2 id="gauges">Gauges</h2>
+<div class="card">
+<p>Live values as round dials, boost on top, then the engine and xDrive:</p>
+<ul>
+  <li><strong>Engine:</strong> boost against its target, RPM, torque, load and pedal position.</li>
+  <li><strong>Temperatures:</strong> oil, coolant, exhaust and intake air, plus battery voltage.</li>
+  <li><strong>xDrive:</strong> rear-axle torque, road speed, front-to-rear wheel slip, lateral and longitudinal g, and yaw rate.</li>
+  <li><strong>DPF and diesel</strong> (to add): soot, DPF pressure, regeneration, rail pressure, injection, air mass, lambda, fuel, NOx and AdBlue range.</li>
+</ul>
+<p>The gauges read whenever the tab is on screen, until you tap <strong>Stop</strong>, at up to 20 readings a second. The white tick on a dial is the highest value since Start, the orange one the engine's boost target, and red on the track is the warning range. The sliders button chooses and orders the gauges; the first is shown large. A gauge your car doesn't answer stays grey. The screen stays on while they run.</p>
+<p>Use the gauges with the car parked, or let a passenger read them. Don't look at your iPhone while you drive.</p>
+</div>
+
+<h2 id="data">Your data</h2>
+<div class="card">
+<h3>One history per car</h3>
+<p>Each car's history is saved on the iPhone under its VIN. Switching cars switches histories.</p>
+<h3>Backups</h3>
+<p>Every time you add, edit, remove or reorder a record, import a file, restore a backup or write to the car, Boostbook saves a dated copy of that car's history. Open <kbd>⋯</kbd> &gt; <strong>Backups</strong> on the History tab to see them newest first. Tap one to look at it, share it or restore it; the current history is backed up before a restore, so you can always go back.</p>
+<p>Backups are ordinary JSON files. In the Files app, they're under <strong>On My iPhone &gt; Boostbook &gt; Cars &gt;</strong> <em>the car's VIN</em> <strong>&gt; Backups</strong>, named by date and time.</p>
+<h3>Import and export</h3>
+<ul>
+  <li><strong>Export as .json</strong> saves the car's history with its VIN and name. <strong>Export as .tst</strong> saves it in the EDIABAS Tool32 job format, with the VIN in the file name.</li>
+  <li><strong>Export all cars</strong> saves every car in one file.</li>
+  <li><strong>Import</strong> takes any of these. A file with a VIN goes to that car, and the car is added if it's new. A file without one goes to the selected car. Before an import replaces a history, the current one is backed up.</li>
+</ul>
+<p>Nothing leaves your iPhone unless you export it.</p>
+</div>
+
+<h2 id="trouble">Troubleshooting</h2>
+<div class="card">
+<h3>"No vehicle replied"</h3>
+<ul>
+  <li>Check that the ignition is on, and that the adapter shows under Settings &gt; Ethernet.</li>
+  <li>Check <strong>ENET over</strong> on the Car tab: <strong>ENET cable (USB Ethernet)</strong> or <strong>Wi-Fi ENET adapter</strong>, whichever you use.</li>
+  <li>Check that Local Network is on for Boostbook in Settings &gt; Privacy &amp; Security &gt; Local Network.</li>
+  <li>The search can take up to about 20 seconds. If it still fails, type the gateway's IP address on the Car tab and tap Connect.</li>
+</ul>
+<h3>"Couldn't read the VIN; nothing was written"</h3>
+<p>The head unit didn't answer the VIN request. Check the connection with Connect on the Car tab, and wait until the head unit has finished starting up.</p>
+<h3>"This history is for … ; nothing was written"</h3>
+<p>The car on the cable isn't the selected car. The new car has been added to the garage: select the right car on the Car tab and try again.</p>
+<h3>The history doesn't show in the car</h3>
+<p>Leave <strong>Restart head unit afterwards</strong> on, or restart the head unit yourself.</p>
+</div>
+
+<div class="note">
+<p><strong>Take care.</strong> Writing service history and resetting service items changes your car's control units. Check what you're writing first, and keep the ignition on and the battery charged while you work.</p>
+</div>
+
+<h2 id="support">Support</h2>
+<p>Questions, problems or a car that doesn't work? Email <a href="mailto:apps@earlish.com.au">apps@earlish.com.au</a>. Please include your car's model and year, the head unit, and what the app showed.</p>
+
+<footer>
+  <p><a href="privacy.html">Privacy policy</a></p>
+  <p>Boostbook is an independent app. It is not affiliated with, endorsed by or sponsored by BMW AG. BMW and xDrive are trademarks of BMW AG.</p>
+</footer>
+</main>
+</body>
+</html>
