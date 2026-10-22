@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Boostbook: user guide and support</title>
-<meta name="description" content="Boostbook shows live boost, temperatures and xDrive torque from your BMW diesel, keeps its service history and writes it to the head unit over ENET.">
+<meta name="description" content="Boostbook shows live boost, temperatures and xDrive torque from your BMW, diesel, petrol or hybrid, keeps its service history and writes it to the head unit over ENET.">
 <link rel="icon" href="img/icon.png">
 <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +14,7 @@
   <img src="img/icon.png" alt="">
   <div>
     <h1>Boostbook</h1>
-    <p class="tagline">Live gauges and the service book for your BMW diesel, on your iPhone.</p>
+    <p class="tagline">Live gauges and the service book for your BMW, on your iPhone.</p>
   </div>
 </header>
 
@@ -38,7 +38,7 @@
   <img src="img/editor.png" alt="Editing a record">
 </div>
 
-<p>Boostbook turns your iPhone into a gauge pod for your BMW diesel with xDrive: boost against its target, oil, coolant and exhaust temperatures, and how much torque the rear axle is taking, live from the car's control units. It also keeps each car's service history and writes it to the head unit, so every service shows up on the car's own Service History screen, and it reads and resets the service-due (CBS) items the instrument cluster shows.</p>
+<p>Boostbook turns your iPhone into a gauge pod for your BMW: boost against its target, oil, coolant and exhaust temperatures, g-forces, and with xDrive how much torque the front or rear axle is taking, live from the car's control units. It works with diesel and petrol engines, and shows a plug-in hybrid's battery and electric motor. It also keeps each car's service history and writes it to the head unit, so every service shows up on the car's own Service History screen, and it reads and resets the service-due (CBS) items the instrument cluster shows.</p>
 
 <h2 id="start">Getting started</h2>
 <div class="card">
@@ -48,7 +48,7 @@
   <li>an <strong>ENET cable</strong> (Ethernet to OBD) and a <strong>USB-C or Lightning Ethernet adapter</strong> for the iPhone. This is the fastest way. When it's plugged in, it shows under Settings &gt; Ethernet.</li>
   <li>a <strong>Wi-Fi ENET adapter</strong>.</li>
 </ul>
-<p>The gauges are made for BMW's B47 four-cylinder diesel with xDrive; other engines show the gauges they answer. Writing service history needs an NBT Evo head unit. Boostbook was developed and tested on an F48 X1 xDrive with the B47 and NBT Evo; other cars may work but haven't been tested.</p>
+<p>The gauges ask each control unit which version it is and read the values that version has, so they suit diesel and petrol engines, xDrive and sDrive, and plug-in hybrids. Writing service history needs an NBT Evo head unit. Boostbook was developed and tested on an F48 X1 xDrive with the B47 diesel and NBT Evo. The values for other engines, transfer cases and hybrid drives come from BMW's diagnostic data and haven't been tested on those cars yet: if something looks wrong, a sensor scan (below) helps put it right.</p>
 <h3>Connecting</h3>
 <p>On the <strong>Car</strong> tab, choose how you connect under <strong>Connect with</strong>, plug in and switch the ignition on, then:</p>
 <ul>
@@ -98,14 +98,17 @@
 
 <h2 id="gauges">Gauges</h2>
 <div class="card">
-<p>Live values as round dials, boost on top, then the engine and xDrive:</p>
+<p>Live values as round dials, boost on top, then the engine and chassis:</p>
 <ul>
   <li><strong>Engine:</strong> boost against its target, RPM, torque, load and pedal position.</li>
   <li><strong>Temperatures:</strong> oil, coolant, exhaust and intake air, plus battery voltage.</li>
-  <li><strong>xDrive:</strong> rear-axle torque, road speed, front-to-rear wheel slip, lateral and longitudinal g, and yaw rate.</li>
-  <li><strong>DPF and diesel</strong> (to add): soot, DPF pressure, regeneration, rail pressure, injection, air mass, lambda, fuel, NOx and AdBlue range.</li>
+  <li><strong>Chassis:</strong> road speed, front-to-rear wheel slip, lateral and longitudinal g, and yaw rate. With xDrive, the torque going to the rear axle (front-drive models such as the X1 and 2 Series Active Tourer) or the front axle (rear-drive ones such as the 3, 5 and X5).</li>
+  <li><strong>Diesel:</strong> the DPF's soot, pressure and regeneration; and, to add, rail pressure, injection, air mass, lambda, fuel, NOx and AdBlue range.</li>
+  <li><strong>Petrol:</strong> ignition timing, and fuel pressure to add, on BMW's four-, six- and eight-cylinder turbo petrols from the N20 and N55 on (B38, B48, B58 and others).</li>
+  <li><strong>Plug-in hybrid and i3:</strong> the high-voltage battery's charge and power, and the electric motor's torque; its voltage, temperatures and motor speed to add.</li>
 </ul>
-<p>The gauges read whenever the tab is on screen, until you tap <strong>Stop</strong>, at up to 20 readings a second. The white tick on a dial is the highest value since Start, the orange one the engine's boost target, and red on the track is the warning range. The sliders button chooses and orders the gauges; the first is shown large. A gauge your car doesn't answer stays grey. The screen stays on while they run.</p>
+<p>The gauges read whenever the tab is on screen, until you tap <strong>Stop</strong>, at up to 20 readings a second. The white tick on a dial is the highest value since Start, the orange one the engine's boost target, and red on the track is the warning range. The sliders button chooses and orders the gauges; the first is shown large. Gauges your car hasn't got (xDrive on an sDrive car, a diesel's DPF on a petrol one) are left out, and one your car doesn't answer stays grey. The screen stays on while they run.</p>
+<p><strong>Missing gauges?</strong> In the same sliders menu, <strong>Scan the Car's Sensors</strong> asks your car's control units which values they have, and <strong>Email the Report</strong> sends the result to us, so support for your car can be added. The report has the car's model, engine and build date and the values it answered, not its VIN.</p>
 <p>Use the gauges with the car parked, or let a passenger read them. Don't look at your iPhone while you drive.</p>
 </div>
 
